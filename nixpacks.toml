@@ -1,5 +1,9 @@
+[variables]
+NODE_VERSION = "22"
+PNPM_VERSION = "11"
+
 [phases.install]
-cmds = ["pnpm install"]
+cmds = ["npm install -g pnpm@11 && pnpm install --frozen-lockfile"]
 
 [phases.build]
 cmds = ["pnpm build"]
